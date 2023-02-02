@@ -1,0 +1,7 @@
+rake-nltk
+pandas
+matplotlib
+wordcloud
+vaderSentiment
+seaborn
+gensim==3.8.3
