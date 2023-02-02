@@ -1,10 +1,8 @@
 <h2>Introduction</h2>
-<pre>
-This code is for generating a word cloud from a set of CSV files. The code contains functions for extracting keywords from the data, counting the frequency of each keyword, and generating a word cloud from the frequency data. The code is written in Python and uses the spacy,  pandas, matplotlib, and wordcloud libraries.
-<pre>
+<p>This code is for generating a word cloud from a set of CSV files. The code contains functions for extracting keywords from the data, counting the frequency of each keyword, and generating a word cloud from the frequency data. The code is written in Python and uses the spacy,  pandas, matplotlib, and wordcloud libraries.</p>
 
 <h2>Problem Statement</h2>
-The goal of this code is to process the text data in a set of CSV files, extract relevant keywords, count the frequency of each keyword, and generate a word cloud to visualize the most frequent keywords.
+<p>The goal of this code is to process the text data in a set of CSV files, extract relevant keywords, count the frequency of each keyword, and generate a word cloud to visualize the most frequent keywords.</p>
 
 <h2>Code</h2>
 <ul>
