@@ -1,19 +1,18 @@
-<h2>Introduction</h2>
-<p>This code is for generating a word cloud from a set of CSV files. The code contains functions for extracting keywords from the data, counting the frequency of each keyword, and generating a word cloud from the frequency data. The code is written in Python and uses the spacy,  pandas, matplotlib, and wordcloud libraries.</p>
+# Introduction
+This code is for generating a word cloud from a set of CSV files. The code contains functions for extracting keywords from the data, counting the frequency of each keyword, and generating a word cloud from the frequency data. The code is written in Python and uses the spacy, pandas, matplotlib, and wordcloud libraries.
 
-<h2>Problem Statement</h2>
-<p>The goal of this code is to process the text data in a set of CSV files, extract relevant keywords, count the frequency of each keyword, and generate a word cloud to visualize the most frequent keywords.</p>
+# Problem Statement
+The goal of this code is to process the text data in a set of CSV files, extract relevant keywords, count the frequency of each keyword, and generate a word cloud to visualize the most frequent keywords.
 
-<h2>Code</h2>
-
-..* <h3>Loading the libraries and initializing variables </h3>
-<p>Here, we are loading the spacy library with the `en_core_web_sm` model, which is a small English language model for NLP tasks. We are also creating a set of stop words and punctuation from the spacy library. Stop words are words that are commonly used in a language but do not contribute much to the meaning of a sentence. Punctuation marks are symbols used to separate words, sentences, and clauses</p>
-```
+# Code
+## Loading the libraries and initializing variables 
+Here, we are loading the spacy library with the `en_core_web_sm` model, which is a small English language model for NLP tasks. We are also creating a set of stop words and punctuation from the spacy library. Stop words are words that are commonly used in a language but do not contribute much to the meaning of a sentence. Punctuation marks are symbols used to separate words, sentences, and clauses.
+```python
 nlp = spacy.load("en_core_web_sm")
 stopwords = set(spacy.lang.en.stop_words.STOP_WORDS)
 punctuation = string.punctuation
-```
 
+```
 
 ..* <h3>Function to extract keywords</h3>
 This function takes a single argument data which is a string of `text`. The first step is to convert the text to lowercase. Then, it tries to detect the language of the text using the detect function and translate it to English if it is not already in English. After that, the `nlp` model is used to process the `text` and tokenize it into individual words. The loop then goes through each token and only keeps the tokens that are not stop words or punctuation marks. The list of filtered tokens is returned as the `result`.
