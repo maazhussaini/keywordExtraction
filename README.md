@@ -86,7 +86,7 @@ def read_file():
 ```
 
 
-<h2>Future Enhancement:</h2>
+# Future Enhancement:
 
 1. The keyword extraction feature can be used as a feature in Natural Language Processing (NLP) and Machine Learning (ML) tasks such as sentiment analysis, text classification, named entity recognition, and others.
 
