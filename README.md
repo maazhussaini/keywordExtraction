@@ -5,7 +5,7 @@ This code is for generating a word cloud from a set of CSV files. The code conta
 The goal of this code is to process the text data in a set of CSV files, extract relevant keywords, count the frequency of each keyword, and generate a word cloud to visualize the most frequent keywords.
 
 # Code
-## Loading the libraries and initializing variables 
+* <h3>Loading the libraries and initializing variables </h3>
 Here, we are loading the spacy library with the `en_core_web_sm` model, which is a small English language model for NLP tasks. We are also creating a set of stop words and punctuation from the spacy library. Stop words are words that are commonly used in a language but do not contribute much to the meaning of a sentence. Punctuation marks are symbols used to separate words, sentences, and clauses.
 ```python
 nlp = spacy.load("en_core_web_sm")
