@@ -14,7 +14,7 @@ punctuation = string.punctuation
 
 ```
 
-..* <h3>Function to extract keywords</h3>
+* <h3>Function to extract keywords</h3>
 This function takes a single argument data which is a string of `text`. The first step is to convert the text to lowercase. Then, it tries to detect the language of the text using the detect function and translate it to English if it is not already in English. After that, the `nlp` model is used to process the `text` and tokenize it into individual words. The loop then goes through each token and only keeps the tokens that are not stop words or punctuation marks. The list of filtered tokens is returned as the `result`.
 ```Python
 def extract_keywords(data):
@@ -40,6 +40,7 @@ def extract_keywords(data):
     except Exception as err:
         print(str(err))
 ```
+
 * <h3>Function to generate word cloud</h3>
 This function is used to visualize the frequency of keywords in a word cloud format. It takes a dictionary object `word_count` as input, which contains the keywords and their frequency. The function creates a word cloud object using the WordCloud class from the wordcloud library. The function sets the size of the figure, generates the word cloud using the frequency information, and sets the axis to 'off' to remove the axis labels. Finally, it displays the word cloud using the show method of the Matplotlib library.
 ```Python
@@ -55,6 +56,7 @@ def word_cloud(word_count):
    
     plt.show()
 ```
+
 * <h3>Function to read files.</h3>
 This function reads files from a directory 'Datasets/' and concatenates the contents of the 'description' column of each file. The function first retrieves a list of all files in the directory and loops through each file. If the file ends with '.csv', it reads the file using the pandas library and adds the contents of the 'description' column to the text variable. The function also removes punctuation and stopwords from each description before concatenating them. Finally, the function returns the concatenated text after removing unicode characters.
 ```Python
@@ -83,9 +85,14 @@ def read_file():
     return text
 ```
 
+
 <h2>Future Enhancement:</h2>
+
 1. The keyword extraction feature can be used as a feature in Natural Language Processing (NLP) and Machine Learning (ML) tasks such as sentiment analysis, text classification, named entity recognition, and others.
+
 2. The code can be enhanced to include NLP and ML techniques to perform tasks such as topic modeling and document clustering on the extracted keywords.
+
 3. The code can be extended to work with larger datasets and other text-based sources, such as social media platforms and news articles.
+
 4. The extracted keywords can also be used as input to other NLP and ML algorithms, such as word embeddings and word association rules, to generate more meaningful insights.
 
