@@ -7,7 +7,7 @@
 <h2>Code</h2>
 
 * <h3>Loading the libraries and initializing variables </h3>
-...Here, we are loading the spacy library with the `en_core_web_sm` model, which is a small English language model for NLP tasks. We are also creating a set of stop words and punctuation from the spacy library. Stop words are words that are commonly used in a language but do not contribute much to the meaning of a sentence. Punctuation marks are symbols used to separate words, sentences, and clauses.
+<p>...Here, we are loading the spacy library with the `en_core_web_sm` model, which is a small English language model for NLP tasks. We are also creating a set of stop words and punctuation from the spacy library. Stop words are words that are commonly used in a language but do not contribute much to the meaning of a sentence. Punctuation marks are symbols used to separate words, sentences, and clauses..</p>
 
 
 nlp = spacy.load("en_core_web_sm")
