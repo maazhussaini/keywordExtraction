@@ -5,4 +5,4 @@ pyenv/
 Export/
 Datasets/
 *.log
-.env
+.env.txt

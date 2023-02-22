@@ -10,8 +10,9 @@ import json
 from langdetect import detect
 from translate import Translator
 import re
+# import networkx as nx
 
-nlp_lg = spacy.load("en_core_web_sm")
+nlp = spacy.load("en_core_web_sm")
 stopwords = set(spacy.lang.en.stop_words.STOP_WORDS)
 punctuation = string.punctuation
 
@@ -29,7 +30,7 @@ def extract_keywords(data):
         except:
             print("Error: Could not detect language or translate text.")
         
-        doc = nlp_lg(text)
+        doc = nlp(text)
         for token in doc:
             if not (token.is_stop or token.is_punct):
                 result.append(token.text)
@@ -47,7 +48,6 @@ def word_cloud(word_count):
     plt.imshow(wordcloud) 
     plt.axis("off") 
     plt.tight_layout(pad = 0) 
-    
     plt.show()
 
 def read_file():
@@ -81,6 +81,7 @@ text = read_file()
 
 keywords = extract_keywords(text)
 word_count = Counter(keywords)
+word_cloud(word_count)
 print(word_count.most_common(10))
 
 word_count_json = json.dumps(word_count, indent=4)

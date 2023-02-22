@@ -4,4 +4,7 @@ matplotlib
 wordcloud
 vaderSentiment
 seaborn
-gensim==3.8.3
+spacy
+wordcloud
+langdetect
+translate
