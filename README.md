@@ -62,13 +62,13 @@ def cluster_keywords(keywords: List[str]) -> List[List[str]]:
 ```
 
   * <h3>Benefits of Clustering Keywords</h3>
-The `cluster_keywords` function has several benefits, including:
+        The `cluster_keywords` function has several benefits, including:
 
-+ Reducing the complexity of text data by grouping similar keywords together
-+ Improving the efficiency of NLP algorithms by removing redundant and irrelevant keywords
-+ Providing a structured way of analyzing text data
-+ Enabling the discovery of latent relationships and patterns between keywords that may not be immediately apparent.
-In summary, the cluster_keywords function is an essential component of the text data analysis pipeline. By grouping similar keywords together, it simplifies the analysis process, improves efficiency, and provides valuable insights into the underlying patterns and relationships within the data.
+        + Reducing the complexity of text data by grouping similar keywords together
+        + Improving the efficiency of NLP algorithms by removing redundant and irrelevant keywords
+        + Providing a structured way of analyzing text data
+        + Enabling the discovery of latent relationships and patterns between keywords that may not be immediately apparent.
+        In summary, the cluster_keywords function is an essential component of the text data analysis pipeline. By grouping similar keywords together, it simplifies the analysis process, improves efficiency, and provides valuable insights into the underlying patterns and relationships within the data.
 
 * <h3>Main Function</h3>
 The main function reads CSV files from a given directory, extracts and clusters the keywords from each file, and stores the resulting clusters in MongoDB. The function first establishes a connection to MongoDB and initializes a collection to store the keyword clusters. It then iterates over each CSV file in the given directory, reads the file into a pandas DataFrame, extracts and clusters the keywords, and stores the resulting clusters in MongoDB as a document associated with the file. The function handles any errors that occur during the process and logs them using the Python logging module.
