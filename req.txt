@@ -8,3 +8,6 @@ spacy
 wordcloud
 langdetect
 translate
+pymongo
+scikit-learn
+networkx
