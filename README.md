@@ -61,13 +61,15 @@ def cluster_keywords(keywords: List[str]) -> List[List[str]]:
     return keyword_clusters
 ```
 
-  * <h3>Benefits of Clustering Keywords</h3>
-        The `cluster_keywords` function has several benefits, including:
+*   * <h3>Benefits of Clustering Keywords</h3>
 
-        + Reducing the complexity of text data by grouping similar keywords together
-        + Improving the efficiency of NLP algorithms by removing redundant and irrelevant keywords
-        + Providing a structured way of analyzing text data
-        + Enabling the discovery of latent relationships and patterns between keywords that may not be immediately apparent.
+    The `cluster_keywords` function has several benefits, including:
+
+        1. Reducing the complexity of text data by grouping similar keywords together
+        2. Improving the efficiency of NLP algorithms by removing redundant and irrelevant keywords
+        3. Providing a structured way of analyzing text data
+        4. Enabling the discovery of latent relationships and patterns between keywords that may not be immediately apparent.
+
         In summary, the cluster_keywords function is an essential component of the text data analysis pipeline. By grouping similar keywords together, it simplifies the analysis process, improves efficiency, and provides valuable insights into the underlying patterns and relationships within the data.
 
 * <h3>Main Function</h3>
