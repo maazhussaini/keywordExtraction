@@ -31,7 +31,6 @@ Next, the vectorized keywords are clustered using the K-Means algorithm, which i
 After clustering, the keywords are assigned labels indicating which cluster they belong to. These labels are stored in the cluster_labels variable. Using these labels, a dictionary is created that stores the keywords in each cluster. Finally, the dictionary is converted into a list of lists where each inner list represents a cluster of similar keywords.
 The keyword_clusters variable is returned which contains the list of clusters of similar keywords.
 
-This function reads files from a directory 'Datasets/' and concatenates the contents of the 'description' column of each file. The function first retrieves a list of all files in the directory and loops through each file. If the file ends with '.csv', it reads the file using the pandas library and adds the contents of the 'description' column to the text variable. The function also removes punctuation and stopwords from each description before concatenating them. Finally, the function returns the concatenated text.
 ```Python
 def cluster_keywords(keywords: List[str]) -> List[List[str]]:
     """
